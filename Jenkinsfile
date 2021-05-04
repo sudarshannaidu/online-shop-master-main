@@ -24,7 +24,7 @@ node{
              //sh 'sudo docker push upasanatestdocker/mysql'
              //sh 'sudo docker push upasanatestdocker/job1_web1.0'
              sh 'sudo docker tag ecommerce_demo_site_web sudarshandn/ecommerce_01'
-             sh 'sudo docker push sudarshandn/ecommerce_01:ecommerce_demo_site_web'
+             sh 'sudo docker push sudarshandn/ecommerce_01:latest'
             // sh 'docker push upasanatestdocker/mysql'
           
     }
