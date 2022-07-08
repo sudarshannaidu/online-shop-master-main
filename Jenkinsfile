@@ -2,7 +2,7 @@ node{
 
     stage('SCM Checkout')
     {
-        git url: 'https://github.com/s-naidu/online-shop-master.git'
+        git url: 'https://github.com/sudarshannaidu/online-shop-master-main.git'
     }
     
     stage('Run Docker Compose File')
@@ -14,7 +14,7 @@ node{
     {
             //docker.withRegistry( 'https://registry.hub.docker.com', 'DockerHubPassword' ) {
              
-             sh 'sudo docker login -u "sudarshandn" -p "DockerHub@2016" docker.io'
+             sh 'sudo docker login -u "sudarshandn" -p "DockerHub@2022" docker.io'
              sh 'sudo docker tag ecommerce_demo_site_web sudarshandn/ecommerce_01'
              sh 'sudo docker push sudarshandn/ecommerce_01:latest'
            
